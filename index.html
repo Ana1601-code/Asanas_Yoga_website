@@ -18,29 +18,79 @@
     .left{
         border: 2px solid red;
         display: inline-block;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        cursor: pointer;
     }
+
     .mid{
         border: 2px solid green;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
     }
+
     .right{
         border: 2px solid purple;
         display: inline-block;
         position: absolute;
-        right: 48px;
+        right: 26px;
         top: 20px;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        color: rgb(102, 100, 100);
+        text-decoration: none;
+    }
+
+    .btn{
+        margin: 1px 9px;
+        color: black;
+        background-color: rgb(250, 165, 7);
+        padding: 6px 11px;
+        border: 2px rgb(216, 78, 24);
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .btn:hover{
+        background-color: rgb(221, 211, 211);
     }
 
 </style>
 <body>
     <header class="header">   <!-- for header  -->
-        <div class="left">    <!-- logo -->
-        i am left
+        <div class="left">    <!-- company name -->
+        <h2>Asanas</h2>
         </div>
         <div class="mid">     <!-- navigation bar -->
-i am mid
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
         </div>
         <div class="right">   <!-- search box and account -->
-i am right
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
         </div>
     </header>
     
