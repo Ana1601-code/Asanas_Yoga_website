@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga website</title>
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
     /* CSS reset */
@@ -14,13 +15,14 @@
         padding: 0px;
         background: url(images/bg.png);
         background-size: 1620px 994px;
+        font-family: 'Baloo Bhai 2', cursive;
     }
     .left{
         border: 2px solid red;
         display: inline-block;
         position: absolute;
-        left: 12px;
-        top: 20px;
+        left: 36px;
+        top: 18px;
         cursor: pointer;
     }
 
@@ -35,8 +37,8 @@
         border: 2px solid purple;
         display: inline-block;
         position: absolute;
-        right: 26px;
-        top: 20px;
+        right: 33px;
+        top: 26px;
     }
 
     .navbar{
@@ -62,16 +64,24 @@
     .btn{
         margin: 1px 9px;
         color: black;
-        background-color: rgb(250, 165, 7);
-        padding: 6px 11px;
-        border: 2px rgb(216, 78, 24);
+        background-color: transparent;
+        padding: 3px 7px;
         border-radius: 10px;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 17px;
+        font-family: 'Baloo Bhai 2', cursive;
     }
 
     .btn:hover{
         background-color: rgb(221, 211, 211);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 93px 40px;
+        padding: 82px;
+        width: 23%;
+        border-radius: 28px;
     }
 
 </style>
@@ -93,6 +103,12 @@
         <button class="btn">Email Us</button>
         </div>
     </header>
+    <div class="container">
+        <h1>Join the Yoga journey with best Instructors</h1>>
+        <form action="noaction.php">        <!-- Used when there is no backend part to accept input and process -->
+            
+        </form>
+    </div>
     
 </body>
 </html>
